@@ -8,4 +8,5 @@ spec:
     - port: 9092
       targetPort: 9595
       protocol: TCP
-  selector: myapp
+  selector:
+    app: myapp
