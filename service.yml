@@ -1,11 +1,23 @@
 apiVersion: v1
 kind: Service
-metadata: 
-    name: my-svc
+metadata:
+  name: api-service
 spec:
-  type: NodePort
-  ports:
-    - port: 9092
-      targetPort: 9595
-      protocol: TCP
-  selector: myapp
+  selector:
+    app: myapp
+  ports:
+    - protocol: TCP
+      port: 9090
+      targetPort: 9595
+  type: NodePort
+
+
+
+
+
+
+
+
+
+
+
